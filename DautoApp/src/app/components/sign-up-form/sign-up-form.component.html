@@ -1,0 +1,20 @@
+<app-img-slider></app-img-slider>
+<form class="jumbotron form-signin col-sm-12" id="searchForm">
+  <div class="form-group col-sm-4 col-sm-offset-4">
+      <div class="input-group center-block">
+        <input type="text" class="form-control " placeholder="First Name" name="firstname" [(ngModel)]="input.firstname" required autofocus>
+        <input type="text" class="form-control " placeholder="Last Name" name="lastname" [(ngModel)]="input.lastname" required autofocus>
+        <input type="email" class="form-control " placeholder="Email" name="email" [(ngModel)]="input.email" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="input.password" required autofocus>
+<div class="checkbox">
+  <label style="color:white">
+    <input type="checkbox" value="remember-me"> Terms & Conditions Applied
+  </label>
+</div>
+  <button (click)="onClick()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign Up</button>
+</div>
+  </div>
+</form>
+
+<!-- <app-services-slider></app-services-slider>
+<app-footer></app-footer> -->

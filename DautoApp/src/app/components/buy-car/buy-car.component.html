@@ -1,0 +1,15 @@
+  <div class="container" *ngFor = "let image of mydata">
+    <div class="row">
+      <div class="col-sm-12 jumbotron">
+        <p> <b>Brand: </b> {{image.brand}}</p>
+        <p> <b>Model : </b> {{image.model}}</p>
+        <p class="txt"> <b>Specification : </b> {{image.specification}}</p>
+        <ul class="navbar-right">
+            <button routerLink="/buy-car-form" class="btn btn-md btn-default" type="submit">Buy now</button>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+<app-services-slider></app-services-slider>
+<app-footer></app-footer>

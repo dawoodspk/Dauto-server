@@ -1,0 +1,64 @@
+<h1 class="text-center">Buy Car Entries</h1>
+<span>
+  <button (click)="onClick()" class="btn btn-default btn-info">Add new car</button>
+  <br>
+</span>
+<br>
+<div *ngIf="formOpen" class="container">
+  <form class="jumbotron form-signin col-sm-12">
+      <div class="form-group col-sm-4 col-sm-offset-4">
+          <div class="input-group center-block">
+            <input type="text" class="form-control " placeholder="Brand" name="brand" [(ngModel)]="input.brand" required autofocus>
+            <input type="text" class="form-control " placeholder="Model" name="model" [(ngModel)]="input.model" required autofocus>
+            <input type="text" class="form-control" placeholder="Specification" name="specification" [(ngModel)]="input.specification" required autofocus>
+    
+      <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="sendData()">Add Record</button>
+    </div>
+      </div>
+    </form>
+</div>
+
+
+<br>
+<br>
+
+
+<table class="table table-responsive table-striped">
+  <tr>
+  <th>Brand</th>
+  <th>Model</th>
+  <th>Specification</th>
+  <th></th>
+  </tr>
+  <tr *ngFor="let items of mydata">
+      <td>{{items.brand}}</td>
+      <td>{{items.model}}</td>
+      <td>{{items.specification}}</td>
+      <td><button type="button" (click)="onclick(items)" [id]="items"> DELETE  </button></td>
+      </tr>
+</table>
+<br>
+<br>
+
+
+<h1 class="text-center"> Request For Buying A Car</h1>
+<table class="table table-responsive table-striped">
+  <tr>
+  <th>Username</th>
+  <th>E-mail</th>
+  <th>Mobile/Phone</th>
+  <th>Type</th>
+  <th>Brand</th>
+  <th>Model</th>
+  <th></th>
+  </tr>
+  <tr *ngFor="let items of formdata">
+      <td>{{items.name}}</td>
+      <td>{{items.email}}</td>
+      <td>{{items.mobileNumber}}</td>
+      <td>{{items.type}}</td>
+      <td>{{items.brand}}</td>
+      <td>{{items.model}}</td>
+      <td><button type="button" (click)="click(items)" [id]="items"> DELETE  </button></td>
+      </tr>
+</table>

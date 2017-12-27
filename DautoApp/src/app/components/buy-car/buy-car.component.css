@@ -1,0 +1,21 @@
+
+
+.jumbotron{
+    background-color:#3e3e40;
+    color: #ffffff; 
+    margin-top: 5px;
+}
+
+p{
+    display: inline;
+    margin:10px;
+}
+
+.txt{
+    display: block !important;
+}
+
+
+.btn{
+    margin-top:-60px !important;
+}

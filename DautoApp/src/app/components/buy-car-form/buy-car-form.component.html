@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-3"></div>
+      <form class="col-sm-6 jumbotron">
+        <h2 class="text-center">
+          PROVIDE US BELOW INFORMATION SO WE CONTACT YOU
+        </h2>
+        <div class="form-group">
+            <div class="input-group center-block wid">
+              <div class="form-group ">
+                <label>Your name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="input.name" required/>
+              </div>
+              
+              <div class="form-group ">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" [(ngModel)]="input.email" required/>
+              </div>
+              
+              <div class="form-group ">
+                <label>Mobile number</label>
+                <input type="number" class="form-control" name="number" [(ngModel)]="input.number" required/>
+              </div>
+
+              <div class="form-group ">
+                  <label>Type</label>
+                  <input type="text" class="form-control" name="type" [(ngModel)]="input.type" placeholder="Example:new/used" required/>
+                </div>
+      
+              <div class="form-group ">
+                  <label>Brand</label>
+                  <input type="text" class="form-control" name="brand" [(ngModel)]="input.brand" placeholder="Example:Toyota "  required/>
+              </div>
+      
+              <div class="form-group ">
+                  <label>Model</label>
+                  <input type="text" class="form-control" name="model" [(ngModel)]="input.model" placeholder="Example:Corolla" required="required"/>
+              </div>
+        <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> I have read and agreed the terms and conditions
+        </label>
+      </div>
+        <button (click)="onClick()" class="btn btn-lg btn-primary btn-block" type="submit">Submit info</button>
+      </div>
+        </div>
+      </form>
+      <div class="col-sm-3"></div>
+  </div>
+</div>

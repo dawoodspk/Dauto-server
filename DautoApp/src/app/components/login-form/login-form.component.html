@@ -1,0 +1,21 @@
+
+<app-img-slider></app-img-slider>
+  <form class="jumbotron form-signin col-sm-12" id="searchForm">
+      <div class="form-group col-sm-4 col-sm-offset-4">
+          <div class="input-group center-block">
+          <input type="email" id="inputText" class="form-control" placeholder="E-mail"  name="email" [(ngModel)]="input.email" required autofocus>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password"  name="password" [(ngModel)]="input.password" required autofocus>
+    <div class="checkbox">
+          <label style="color:white">
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+    </div>
+    <p *ngIf="check" class="text-center">you are not admin</p>
+    <p *ngIf="check1" class="text-center">Signin Failed </p>
+      <button (click)="data1()" class="btn btn-lg btn-primary btn-block" type="submit" (click)="loginUser()">Sign in</button>
+  </div>
+      </div>
+    </form>
+  
+    <!-- <app-services-slider></app-services-slider>
+    <app-footer></app-footer> -->

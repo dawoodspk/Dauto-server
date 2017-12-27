@@ -1,0 +1,21 @@
+/* .container{
+    max-width: 400px !important;
+   margin: -415px 0 0 480px !important;
+    z-index: 0;
+    position: absolute;
+    
+    
+}
+
+.jumbotron{background-color: rgba(0,0,0,.50) !important;}
+*/
+
+#searchForm {
+	position:absolute;
+  	top:27%;
+}
+.jumbotron{background-color: rgba(0,0,0,.50) !important}
+
+p{
+    color : #ffffff;
+}

@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+<form class="col-sm-6 jumbotron">
+  <h2 class="text-center">
+    SELL YOUR CAR
+  </h2>
+  <div class="form-group ">
+      <div class="input-group center-block wid">
+        <div class="form-group ">
+          <label>Brand</label>
+          <input type="text" class="form-control" name="brand" [(ngModel)]="input.brand" required autofocus/>
+        </div>
+        
+        <div class="form-group ">
+          <label>Model</label>
+          <input type="text" class="form-control" name="model" [(ngModel)]="input.model" required autofocus/>
+        </div>
+        
+        <div class="form-group ">
+          <label>Year</label>
+          <input type="number" class="form-control" name="year" [(ngModel)]="input.year" required autofocus/>
+        </div>
+        
+        <div class="form-group ">
+          <label>Mileage</label>
+          <input type="number" class="form-control" name="mileage" [(ngModel)]="input.mileage" required autofocus/>
+        </div>  
+
+        <div class="form-group ">
+            <label>Registration</label>
+            <input type="text" class="form-control" name="registration" [(ngModel)]="input.registration" required autofocus/>
+        </div>
+
+        <div class="form-group ">
+            <label>E-mail</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="input.email" required autofocus/>
+        </div>
+
+        <div class="form-group ">
+            <label>Your Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]="input.name" required autofocus/>
+        </div>
+        <div class="form-group ">
+            <label>Mobile number</label>
+            <input type="number" class="form-control" name="mobile" [(ngModel)]="input.mobile" required autofocus/>
+        </div>
+
+          <div class="checkbox">
+  <label style="color:white">
+    <input type="checkbox" value="remember-me"> I have read and agree the terms and conditions
+  </label>
+</div>
+  <button class="btn btn-lg btn-primary btn-block" (click)="onClick()" type="submit">Submit</button>
+</div>
+  </div>
+</form>
+<div class="col-sm-3"></div>
+</div>
+</div>
+
+<app-services-slider></app-services-slider>
+<app-footer></app-footer>

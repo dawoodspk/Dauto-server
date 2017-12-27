@@ -1,0 +1,23 @@
+<h1 class="text-center">Rent Car Entries</h1>
+<table class="table table-responsive table-striped">
+  <tr>
+    <th>Pick up Location</th>
+    <th>Pick up Date</th>
+    <th>Drop of Location</th>
+    <th>Drop of Date</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let items of mydata">
+      <td>{{items.pickL}}</td>
+      <td>{{items.pickDT}}</td>
+      <td>{{items.dropL}}</td>
+      <td>{{items.dropDT}}</td>
+      <td>{{items.name}}</td>
+      <td>{{items.email}}</td>
+      <td>{{items.number}}</td>
+      <td><button type="button" (click)="onClick(items)" [id]="items"> DELETE  </button></td>
+  </tr>
+</table>

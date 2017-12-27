@@ -1,0 +1,60 @@
+.book-form-box {
+    background: rgba(0,0,0,.50);
+    transition: 0.3s;
+}
+
+
+
+.book-form {
+    -webkit-box-align: end;
+    align-items: flex-end;
+    padding: 24px 0 35px;
+
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.2em;
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.book-form-title {
+    font-size: 38px;
+    line-height: 1em;
+    position: relative;
+    font-weight: bold;
+    margin-top: 43px;
+}
+.book-form-title small {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+.book-form__text {
+    padding: 5px 0 6px;
+    font-size: 18px;
+    display: block;
+    font-weight: normal;
+}
+
+ .book-form__btn {
+    margin-top: 60px !important;
+    font-size: 2.5rem;
+    font-weight: 700; 
+} 
+
+.book-form__btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.btn{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2) !important;
+    background-image: linear-gradient(#cacdd3, #7d838e) !important;
+    border-radius: 10px; margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+
+.jumbotron{background-color: rgba(0,0,0,.50) !important}
+
+.container{
+    margin-top: 10px;
+}
+
+.wid{
+    max-width: 300px !important;
+}
+
+.text-center{
+    color: #ffffff;
+    font-weight: 200;
+}

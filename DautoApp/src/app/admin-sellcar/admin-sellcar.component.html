@@ -1,0 +1,26 @@
+<h1 class="text-center">Sell Car Entries</h1>
+<table class="table table-responsive table-striped">
+  <tr>
+  <th>Brand</th>
+  <th>Model</th>
+  <th>Year</th>
+  <th>Mileage</th>
+  <th>Registration</th>
+  <th>Email</th>
+  <th>Name</th>
+  <th>Mobile no</th>
+  <th></th>
+  </tr>
+  <tr *ngFor="let items of mydata">
+      <td>{{items.brand}}</td>
+      <td>{{items.model}}</td>
+      <td>{{items.year}}</td>
+      <td>{{items.mileage}}</td>
+      <td>{{items.registration}}</td>
+      <td>{{items.email}}</td>
+      <td>{{items.name}}</td>
+      <td>{{items.mobile}}</td>
+      <td><button  type="button" (click)="onClick(items)" [id]="items" > DELETE  </button></td>
+      </tr>
+</table>
+

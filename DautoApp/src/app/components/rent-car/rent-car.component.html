@@ -1,0 +1,76 @@
+<div class="book-form-box">
+  <div class="container">
+      <form id="book-form" class="book-form" action="#">
+        <div class="row">
+          <span class="book-form-title col-sm-2">
+          </span>
+
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-6">
+               <div class="book-form__text">Pick up Location
+               </div>
+                  <input type="text" class="form-control" name="pick" [(ngModel)]="input.pickL" required/>
+            </div>
+            <div class="col-sm-6">
+                <div class="book-form__text">Pick up Date 
+                </div>
+                <div class="form-group">
+                    <input type='date' class="form-control" name="pickDT" [(ngModel)]="input.pickDT" required/> 
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="book-form__text">Drop of Location
+                </div>
+                   <input type="text" class="form-control" name="dropL" [(ngModel)]="input.dropL" required/>
+             </div>
+             <div class="col-sm-6">
+                 <div class="book-form__text">Drop of Date 
+                 </div>
+                 <div class="form-group">
+                     <input type='date' class="form-control" name="dropDT" [(ngModel)]="input.dropDT" required/> 
+                 </div>
+             </div>
+
+          </div>
+        </div>  
+          <div class="col-sm-2">
+              <button type="button" class="btn btn-default book-form__btn btn-lg" data-toggle="modal" data-target="#myModal">
+                Book Now
+              </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Details</h4>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" placeholder="Your Name" name="name" [(ngModel)]="input.name" required>
+            <input type="text" class="form-control" placeholder="E-mail" name="email" [(ngModel)]="input.email" required>
+            <input type="number" class="form-control" placeholder="Phone number" name="number" [(ngModel)]="input.number" required>
+          </div>
+          <div class="modal-footer">
+            <button  type="button" (click)="onClick()" routerLink="/success" class="btn btn-default" data-dismiss="modal">Ride now</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+<app-services-slider></app-services-slider>
+<app-footer></app-footer>
+
+
+
+
+
